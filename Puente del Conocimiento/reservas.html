@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="css/reservas.css">
+</head>
+<header class="container_nav">   
+    <div class="logo">
+        <a href="/index.html">
+            
+        </a>
+    </div>
+    </header>
+<body>
+    <div class="container">
+        <div class="left-box">
+            <a href="#">
+                <img src="images/2ologoPSH.png" alt="Imagen" style="width: 100%;">
+            </a>
+        </div>
+        <div class="center-box">
+           
+        </div>
+        <div class="right-box">
+            <form id="reservaForm" action="respuesta.html" method="get" >
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono Celular:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha y Hora de la Consulta</label>
+                <input type="datetime-local" id="fecha" name="fecha" required>
+
+                <label>Nivel Seleccionado:</label>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="comensal1" name="comensal" value="1">
+                    <label for="comensal1">Jardin</label>
+                    <input type="checkbox" id="comensal2" name="comensal" value="2">
+                    <label for="comensal2">Primario</label>
+                    <input type="checkbox" id="comensal3" name="comensal" value="3">
+                    <label for="comensal3">Secundario</label>
+                    
+                   
+                </div>
+
+                <button type="submit">Reservar su citag</button>
+            </form>
+        </div>
+    </div>
+    <a href="index.html" class="return-btn">Volver al Inicio</a>
+</body>
+</html>
